@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botão de ativação</title>
+</head>
+<body>
+  <h1>Meu botão</h1>
+  <button onclick= tabuada() id="botao" type="button">Ativar</button>
+  <p id="mensagem">O botão está desativado.</p>
+
+  <script>
+    const botao = document.getElementById("botao");
+    const mensagem = document.getElementById("mensagem");
+
+    botao.addEventListener("click", () => {
+      mensagem.textContent = "Botão ativado!";
+      botao.textContent = "Ativado";
+      botao.disabled = true;
+    });
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
