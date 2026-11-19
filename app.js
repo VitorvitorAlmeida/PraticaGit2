@@ -1,5 +1,5 @@
 let numeroEscolhido = Number(prompt('Escolha um número para mutiplicar:'));
-alert('Clique no botão "Ativar" na página');
+console.log('Clique no botão "Ativar" na página');//mensagem no console
 
 function tabuada() {
     for (let c = 1; c <= 10; c++) {
